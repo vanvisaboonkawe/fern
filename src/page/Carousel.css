@@ -1,0 +1,12 @@
+/* กำหนดความสูงของรูปภาพใน carousel */
+.carousel-image {
+    height: 500px;   /* ปรับความสูงของรูปภาพทั้งหมด */
+    object-fit: cover;  /* ทำให้รูปภาพเต็มพื้นที่โดยไม่เสียสัดส่วน */
+    width: 100%;   /* กำหนดให้รูปภาพกว้างเต็มพื้นที่ */
+    border-radius: 10px;  /* เพิ่มขอบมนให้กับรูปภาพ */
+}
+
+/* ปรับแต่งการควบคุมของ carousel */
+.carousel-control-prev, .carousel-control-next {
+    z-index: 5;
+}
