@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/fern/static/css/main.675141b8.css",
+    "main.js": "/fern/static/js/main.6b17e4b5.js",
+    "static/js/453.ed3810f9.chunk.js": "/fern/static/js/453.ed3810f9.chunk.js",
+    "index.html": "/fern/index.html",
+    "main.675141b8.css.map": "/fern/static/css/main.675141b8.css.map",
+    "main.6b17e4b5.js.map": "/fern/static/js/main.6b17e4b5.js.map",
+    "453.ed3810f9.chunk.js.map": "/fern/static/js/453.ed3810f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.675141b8.css",
+    "static/js/main.6b17e4b5.js"
+  ]
+}
