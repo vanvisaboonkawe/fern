@@ -1,56 +1,83 @@
-/* ตั้งค่าหมายเลขรวม */
-.row {
+/* โครงสร้างรวม */
+.overview-container {
     display: flex;
     flex-direction: column;
     gap: 20px;
     margin: 20px;
+    align-items: center; /* จัดให้อยู่ตรงกลาง */
 }
 
-/* การตกแต่งสำหรับแต่ละกล่อง */
+/* แถวของกล่อง */
+.overview-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+    max-width: 1200px;
+    gap: 20px;
+}
+
+/* กล่องข้อมูล */
 .overview-item {
     background-color: #f8f9fa;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
 }
 
-/* ปรับรูปแบบหัวเรื่อง */
+/* เส้นแบ่ง */
+.divider {
+    width: 2px;
+    background-color: #ddd;
+    margin: 0 10px;
+}
+
+/* หัวข้อ */
 .overview-title {
     background-color: #0a243a;
     color: white;
-    padding: 15px 30px;
+    padding: 15px;
     text-align: center;
     margin-bottom: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* ปรับรูปแบบข้อความ */
+/* ข้อความ */
 .overview-text, .overview-subtitle {
     font-size: 1.1rem;
     line-height: 1.6;
-    text-align: left;
     margin: 0;
 }
 
-/* ปรับรูปแบบลิสต์ */
+/* ลิสต์ */
 .overview-list {
-    padding-left: 20px;
     list-style: inside;
-    text-align: left;
+    padding-left: 0;
+    margin-top: 10px;
 }
 
-/* สไตล์สำหรับข้อความรอง */
-.overview-subtitle {
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: #212529;
-    margin-bottom: 10px;
+/* โปรโมชั่น */
+.overview-promotion .overview-item {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-/* เพิ่มผลกระทบเมื่อคลิกที่ไอเทม */
+/* Hover Effect */
 .overview-item:hover {
-    background-color: #e9ecef;
+    background-color: #f1f3f5;
     transform: translateY(-5px);
     transition: all 0.3s ease;
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+    .overview-row {
+        flex-direction: column;
+    }
+
+    .divider {
+        display: none; /* ซ่อนเส้นแบ่งในหน้าจอเล็ก */
+    }
 }
